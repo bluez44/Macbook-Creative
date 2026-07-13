@@ -41,7 +41,7 @@ const ShowCase = () => {
         </div>
       </div>
 
-      <div className="content">
+      <div className="content"> 
         <div className="wrapper">
           <div className="lg:max-w-md">
             <h2>Rocket Chip</h2>
