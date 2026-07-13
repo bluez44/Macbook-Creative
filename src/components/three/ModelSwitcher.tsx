@@ -4,8 +4,8 @@ import * as THREE from "three";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-import MackbookModel16 from "../Models/Macbook-16";
-import MackbookModel14 from "../Models/Macbook-14";
+import MacbookModel16 from "../Models/Macbook-16";
+import MacbookModel14 from "../Models/Macbook-14";
 
 const ANIMATION_DURATION = 1.5;
 const OFFSET_DISTANCE = 5;
@@ -73,13 +73,13 @@ const ModelSwitcher = ({
     <>
       <PresentationControls {...controlConfig}>
         <group ref={largeMacbookRef}>
-          <MackbookModel16 scale={isMobile ? 0.05 : 0.08} />
+          <MacbookModel16 scale={isMobile ? 0.05 : 0.08} />
         </group>
       </PresentationControls>
 
       <PresentationControls {...controlConfig}>
         <group ref={smallMacbookRef}>
-          <MackbookModel14 scale={isMobile ? 0.03 : 0.06} />
+          <MacbookModel14 scale={isMobile ? 0.03 : 0.06} />
         </group>
       </PresentationControls>
     </>

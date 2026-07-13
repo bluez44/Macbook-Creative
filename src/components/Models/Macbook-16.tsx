@@ -14,7 +14,7 @@ import useMacbookStore from "../../store";
 import { useEffect } from "react";
 import { noChangeParts } from "../../constants";
 
-export default function MackbookModel16(props: Record<string, unknown>) {
+export default function MacbookModel16(props: Record<string, unknown>) {
   const { color } = useMacbookStore();
   const { nodes, materials, scene } = useGLTF("/models/macbook-16-transformed.glb");
 
